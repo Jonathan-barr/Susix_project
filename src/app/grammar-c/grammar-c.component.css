@@ -1,0 +1,18 @@
+.grammar_c
+{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.grammar_c mat-form-field {
+  margin-right: 1rem; /* Adjust the value to your desired spacing */
+  margin-left:  1rem; /* Adjust the value to your desired spacing */
+}
+
+.custom-mat-form-field {
+  width: 400px; /* Adjust the width as needed */
+}
+
+

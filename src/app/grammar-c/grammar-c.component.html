@@ -1,0 +1,35 @@
+<form [formGroup]="form">
+  <div class="grammar_c">
+
+    <mat-form-field>
+      <mat-label>Subject</mat-label>
+      <mat-select formControlName="selectedSubject">
+        <mat-option *ngFor="let option of jsonData" value= "option.value"> {{option.label}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Verb (To be)</mat-label>
+      <mat-select formControlName="selectedVerb" >
+        <mat-option *ngFor="let option of verb1" value= "option.value"> {{option.label}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Adverb</mat-label>
+      <mat-select formControlName="selectedAdverb">
+        <mat-option *ngFor="let option of adverb" value= "option.value"> {{option.label}}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+
+    <mat-form-field class="custom-mat-form-field">
+      <mat-label>Object</mat-label>
+      <input matInput formControlName="inputObject">
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="onSubmit()" >Submit</button>
+
+  </div>
+</form>
+
